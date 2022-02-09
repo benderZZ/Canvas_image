@@ -182,7 +182,11 @@ end;
 procedure TfmMap.FormCreate(Sender: TObject);
 begin
   f_image:=TImage.Create(nil);
-  f_image.Picture.LoadFromFile('Object3D.jpg');
+  if FileExists('Object3D.jpg') then
+    f_image.Picture.LoadFromFile('Object3D.jpg')
+  else
+    SHowMessage('Файл не найден! (Object3D.jpg)');
+
   f_image.Proportional:=true;
   f_bound[0]:=0;
   f_bound[1]:=0;
