@@ -64,11 +64,11 @@ object fmMap: TfmMap
     end
   end
   object CheckBox1: TCheckBox
-    Left = 8
-    Top = 304
+    Left = 16
+    Top = 240
     Width = 97
     Height = 17
-    Caption = 'CheckBox1'
+    Caption = #1044#1074#1080#1078#1077#1085#1080#1077
     TabOrder = 2
     OnClick = CheckBox1Click
   end
@@ -117,7 +117,7 @@ object fmMap: TfmMap
     Interval = 40
     OnTimer = AsyncTimer1Timer
     ThreadPriority = tpNormal
-    Left = 32
-    Top = 248
+    Left = 24
+    Top = 304
   end
 end
